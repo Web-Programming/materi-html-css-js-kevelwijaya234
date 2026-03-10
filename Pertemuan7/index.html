@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 7 | PAW I</title>
+    <script>
+        //Output console
+        console.log("Hallo Javascript");
+        console.error("Ini pesan error");
+        console.table("Apel", "Jeruk");
+
+        // //Output Document
+        // alert("Hallo Javascript");//disini akan muncul duluan baru kode di body di proses
+    </script>
+</head>
+
+<body>
+    <h1>Pembelajaran Javascript</h1>
+    <h1>Ini element h1</h1>
+    <div id="demo">Ini element Div</div>    
+
+    
+    <script>
+        // //Output Document - pop up window
+        // alert("Hallo Javascript");//disini akan muncul setelah kode di body di proses
+        // var nama = prompt ("Masukkan nama: ");
+        // console.log("Hallo," + nama);
+        // confirm("Apakah kamu manusia? Kalo iya tekan 'Ok'");
+        // if(isManusia){
+        //     console.log("Halo Manusia");
+        // }else{
+        //     console.log("Dadah.....");
+        // }
+
+        // //Output Document - DOM (Document Object Model)
+        document.write("<h2> Hallo...</h2>");
+        // bisa menampilkan di element yang sudah ada
+        document.write("<h2> Hawooo...</h2>");
+        //selector
+        document.getElementById("demo").innerHTML = "Nama Saya Kevel";
+        //append bukan menimpa
+        document.getElementById("demo").innerHTML += "<br/>Saya Mahasiswa UMDP";
+
+        //Variabel
+        var nama = "Nur Rachmat"; //String
+        var npm = 2428240007; //Int
+        var isMale = true; //Boolean
+        var hobi = ["Reading", "Writing", "Listening"]//List
+        var nilaiKuliah = {
+            "namaMK " : "PAW 1", 
+            "nilaHuruf " : "A", 
+            "nilaiAngka" : "90"};//object
+    </script>
+
+</body>
+</html>
